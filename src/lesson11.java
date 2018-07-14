@@ -13,6 +13,7 @@ public class lesson11 {
         printABC(30,20,40);
         printStr (doubleStr(p4));
         sumAndPrint(5, 10);
+        sliceStr("abcd");
     }
     public static void printA(int A) {
         String S = String.format("int A = %d",A);
@@ -33,7 +34,8 @@ public class lesson11 {
         String S =  String.format("%d+%d=%d",a,b,a+b);
         System.out.println(S);
     }
-    public static void sliceStr(String.substring "a"){
-        String.substring(АБВГДЕ);
+    public static void sliceStr(String a){
+        String S = a.substring(a.length()/2);
+        System.out.println(S);
     }
 }
