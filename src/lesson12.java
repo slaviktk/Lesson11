@@ -11,16 +11,19 @@ public class lesson12 {
             ves += appleKorzina[i];
             System.out.println(String.format("'%d' -> '%d' -> '%d'", i + 1, appleKorzina[i], ves));
         }
+        System.out.println();
         System.out.println("Средний вес = " + 1.0 * ves / appleKorzina.length);
-
+        System.out.println();
         int S = sumArray(appleKorzina);
         int C = arrayCount(appleKorzina);
         printArray(appleKorzina);
         arrayDecrease(appleKorzina, 15);
         printArray(appleKorzina);
-        System.out.println( S / C);
         arrayIncrease(appleKorzina, 20);
-        printArray(appleKorzina);                             //Вызываем функцию которая нам выведет массив
+        printArray(appleKorzina);//Вызываем функцию которая нам выведет массив
+        System.out.println();
+        System.out.println( "Средний вес яблок = " + S / C);
+        System.out.println();
     }
 
     public static int sumArray(int[] A) {//объявляем функцию которая будет считать колиличество элементов в массиве
